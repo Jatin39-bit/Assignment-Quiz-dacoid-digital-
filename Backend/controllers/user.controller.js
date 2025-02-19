@@ -58,7 +58,7 @@ module.exports.getProfile = async (req, res) => {
 
 module.exports.getQuestions = async (req, res) => {
     try{
-        const questions = await questionModel.aggregate([{ $sample: { size: 10 } }]);
+        const questions = await questionModel.aggregate([{ $sample: { size: 20 } }]);
         res.status(200).json(questions);
     }catch(error){
         res.status(500).json({ message: error.message });
