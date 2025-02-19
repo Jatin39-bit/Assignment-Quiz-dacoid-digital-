@@ -19,7 +19,7 @@ A **Quiz Web Application** built using **React, Tailwind CSS, Node.js, Express, 
    - Quiz history is saved in **MongoDB Atlas** (cloud database).
 8. **Global Leaderboard**: Displays the highest scorers, ranking users based on their best scores.
 9. **Performance Percentage**: Once all questions are answered then performance percentage is shown as compared to other user.
-
+10. **Responsive UI/UX**: Responsive design to all screen ratios and attractive UI and great user experience.
 
 ## Installation & Running Locally
 
