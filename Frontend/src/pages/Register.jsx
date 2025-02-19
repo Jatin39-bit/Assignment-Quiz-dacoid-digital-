@@ -1,7 +1,7 @@
 /* eslint-disable no-unused-vars */
 import React from "react";
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import axios from 'axios'
 import { ToastContainer, toast } from 'react-toastify';
 
@@ -10,6 +10,8 @@ const Register = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+
+  const navigate = useNavigate()
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -20,7 +22,9 @@ const Register = () => {
         password
       })
       if(response.status === 201){
+        localStorage.setItem('token', response.data.token)
         toast.success(response.data.message)
+        navigate('/')
       }else{
         toast.error("Registration Failed")
       }
