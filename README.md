@@ -18,6 +18,8 @@ A **Quiz Web Application** built using **React, Tailwind CSS, Node.js, Express, 
 7. **Data Storage**:
    - Quiz history is saved in **MongoDB Atlas** (cloud database).
 8. **Global Leaderboard**: Displays the highest scorers, ranking users based on their best scores.
+9. **Performance Percentage**: Once all questions are answered then performance percentage is shown as compared to other user.
+
 
 ## Installation & Running Locally
 
